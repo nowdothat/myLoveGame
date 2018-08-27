@@ -1,0 +1,245 @@
+.w{
+  width: 1200px;
+  margin:0 auto;
+}
+header{
+  height: 40px;
+  width: 100%;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+header ul{
+    width: 980px;
+    padding: 0 5px;
+    margin: 0 auto;
+    position: relative;
+    /*line-height: 40px;*/
+}
+header ul li:first-child {
+    background: url("../images/ost-bg.png") no-repeat;
+    background-position: 0 -40px;;
+}
+header ul li{
+    width: 205px;
+    height: 40px;
+    float: left;
+    padding: 0 15px 0 0;
+    background-position: 0 -40px;
+    position: relative;
+}
+header .headOne{
+    float:right;
+    margin:0;
+    width: 118px;
+    font-size: 12px;
+    line-height: 40px;
+}
+.headTwo{
+    float: left;
+    width: 118px;
+    background: url("../images/logo (1).png") 0 12px no-repeat;
+    text-indent: 20px;
+}
+/*.xixibg2{
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    background: url(//ossweb-img.qq.com/images/js/topfiles/ost1410/logo.png) 0 12px no-repeat;
+}*/
+header ul li a{
+  color: #464646;
+}
+
+header ul li i{
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+}
+.xixibg{
+    width: 11px;
+    height: 11px;
+    background:url("../images/ost-bg.png") no-repeat;
+    background-position: -150px -134px;
+    margin-bottom: -1px;
+}
+/*开始头部*/
+.bigBox{
+  /*height: 110px;*/
+    position: relative;
+    width: 1230px;
+    margin: 0 auto;
+    height: 110px;
+    background: #fff;
+}
+#logoO h1{
+  width: 90px;
+  height: 90px;
+  background: #fff;
+  /*box-shadow: 1px 0 10px 1px rgba(0,0,0,.3);*/
+}
+#logoO h1 a{
+  display: block;
+  height: 90px;
+  background: url("../images/logo.png") no-repeat;
+  text-indent: -9999em;
+}
+
+.headerOneUl{
+    width: 1120px;
+    height: 50px;
+    float: left;
+    margin-top:30px;
+}
+.headerOneUl li{
+  float:left;
+}
+.headerOneUl a{
+  display: block;
+  width: 160px;
+  height: 50px;
+  background:url("../images/spr.png") no-repeat center;
+}
+.headerOneUl li:nth-child(1)>a{
+    background-position: 35px 0;
+}
+.headerOneUl li:nth-child(2)>a{
+    background-position: -125px 0;
+}
+.headerOneUl li:nth-child(3)>a{
+    background-position: -285px 0;
+}
+.headerOneUl li:nth-child(4)>a{
+    background-position: -444px 0;
+}
+.headerOneUl li:nth-child(5)>a{
+    background-position: -604px 0;
+}
+.headerOneUl li:nth-child(6)>a{
+    background-position: -765px 0;
+}
+.headerOneUl li:nth-child(7)>a {
+    background-position: -925px 0;
+}
+/*用最粗暴的方法修改背景*/
+.headerOneUl li:nth-child(1)>a:hover{
+    background-position: 35px -77px;
+}
+.headerOneUl li:nth-child(2)>a:hover{
+    background-position: -125px -77px;
+}
+.headerOneUl li:nth-child(3)>a:hover{
+    background-position: -285px -77px;
+}
+.headerOneUl li:nth-child(4)>a:hover{
+    background-position: -444px -77px;
+}
+.headerOneUl li:nth-child(5)>a:hover{
+    background-position: -604px -77px;
+}
+.headerOneUl li:nth-child(6)>a:hover{
+    background-position: -765px -77px;
+}
+.headerOneUl li:nth-child(7)>a:hover {
+    background-position: -925px -77px;
+}
+
+
+
+
+/*隐藏界面开始*/
+.yingchang{
+ /* position: absolute;
+  left:30px;*/
+  height: 300px;
+  /*background:pink;*/
+  width: 100%;
+  background: rgba(08,118,169,.8);
+  position: relative;
+}
+.yingchang{
+  display:none;
+}
+.yingchang>ul{
+  position: absolute;
+  left:30%;
+  top:15px;
+}
+.yingchang>ul li{
+  float: left;
+  width: 160px;
+  padding-top: 10px;
+  text-align: center;
+}
+.yingchang>ul li a{
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.yingchang>ul li a:hover{
+    color:greenyellow;
+}
+.bigBox ul li a:hover{
+  color:hotpink;
+}
+
+/*开始尾部页面*/
+footer{
+    width: 100%;
+    height: 100%;
+    background: #ededed;
+    position:relative;
+}
+.foot_box_x{
+    width: 1000px;
+    height: 108px;
+    padding: 45px 0;
+    color: #7a7a7a;
+    margin : 0 auto;
+}
+.foot_one a:first-child{
+    display: block;
+    float: left;
+    width: 180px;
+    height: 35px;
+    text-indent: -999em;
+    overflow: hidden;
+    margin: 10px 0 0 10px;
+    background: url(../images/foot-dark.png);
+}
+.foot_one a:last-child{
+    display: block;
+    float: left;
+    width: 143px;
+    height: 40px;
+    text-indent: -999em;
+    overflow: hidden;
+    margin: 10px 0 0 10px;
+    background: url(../images/timi_logo.png);
+}
+.footBigBox{
+    width: 630px;
+    float:right;
+    font-size: 12px;
+}
+.footBigBox a{
+    color: #7a7a7a;
+    font-size: 12px;
+}
+.foot_lineOne li{
+    /*width: 72px;*/
+    float:left;
+    font-size: 12px;
+    /*margin-right:12px;*/
+}
+.foot_lineOne .foot_line{
+    width: 1px;
+    height: 9px;
+    margin:4px 9px;
+    background:#ccc;
+}
+
+

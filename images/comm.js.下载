@@ -1,0 +1,81 @@
+function doZoom(n){document.getElementById('detail_content').style.fontSize = n + 'px'}
+
+var imglist1=["//game.gtimg.cn/images/sg/web201706/download1.png","//game.gtimg.cn/images/sg/web201706/download2.png"]
+var imglist2=["//game.gtimg.cn/images/sg/web201706/tv1.png","//game.gtimg.cn/images/sg/web201706/tv2.png"]
+var a=0;
+var b=0;
+
+function download(){setInterval(function()
+{
+	if(a==imglist1.length){a=0;}
+	document.getElementById("download").src=imglist1[a];
+	++a;
+},400)
+}
+download();
+
+function live(){setInterval(function()
+{
+	if(b==imglist2.length){b=0;}
+	document.getElementById("live").src=imglist2[b];
+	++b;
+},400)
+}
+live();
+/*
+var imglist1=["http://game.gtimg.cn/images/sg/web201706/download1.png","http://game.gtimg.cn/images/sg/web201706/download2.png"]
+var imglist2=["http://game.gtimg.cn/images/sg/web201706/tv1.png","http://game.gtimg.cn/images/sg/web201706/tv2.png"]
+var a=0;
+var b=0;
+function download(){
+time=setInterval(function()
+{
+	if(a==imglist1.length){a=0;}
+	$("#download").attr('src',imglist1[a]);
+	++a;
+},400)
+}
+$('.download').mouseover(function(){
+	download();
+})
+$('.download').mouseout(function(){
+	clearInterval(time),function(){
+	download();
+	}
+})
+
+function live(){
+time2=setInterval(function()
+{
+	if(b==imglist2.length){b=0;}
+	$("#live").attr('src',imglist2[b]);
+	++b;
+},400)
+}
+$('.live').mouseover(function(){
+	live();
+})
+$('.live').mouseout(function(){
+	clearInterval(time2),function(){
+	live();
+	}
+})
+*/
+$(window).scroll(function() {
+	if ($(window).scrollTop() >= 300) {
+		$('.top').fadeIn(300);
+	} else {
+		$('.top').fadeOut(300);
+	}
+});
+$(".top").click(function(){
+	 $('body,html').animate({scrollTop:0},500);
+})
+
+
+$('.section1 .wx').click(function(){
+	$('.wx_fc').show();
+})
+$('.wx_fc .close').click(function(){
+	$('.wx_fc').hide();
+})
